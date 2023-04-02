@@ -1,0 +1,34 @@
+{
+    "name": "PowerupControls",
+    "maps": [
+        {
+            "name": "Powerups",
+            "id": "472feec0-07b1-4091-b298-2308449ea2d6",
+            "actions": [
+                {
+                    "name": "UsePowerup",
+                    "type": "Button",
+                    "id": "4005d5d6-d546-4e71-8c16-1ffd8bbc1ae8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "69d64469-6b0b-405b-9d21-0b33d1793282",
+                    "path": "<Keyboard>/e",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UsePowerup",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

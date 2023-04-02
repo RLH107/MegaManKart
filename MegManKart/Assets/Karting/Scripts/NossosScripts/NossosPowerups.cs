@@ -79,18 +79,21 @@ public class NossosPowerups : MonoBehaviour
         if (canUseElectricWeb)
         {
             Debug.Log("UsedElectricWeb");
+            //Instanciar Orbe
             canUseElectricWeb = false;
             randNum = 0;
         }
         if (canUseBearTrap)
         {
             Debug.Log("UsedBearTrap");
+            //Instanciar BearTrap
             canUseBearTrap = false;
             randNum = 0;
         }
         if (canUseCards)
         {
             Debug.Log("UsedCards");
+            //Instanciar Cards
             canUseCards = false;
             randNum = 0;
         }
@@ -105,6 +108,7 @@ public class NossosPowerups : MonoBehaviour
         if (canUseZeroBlades)
         {
             Debug.Log("UsedZeroBlades");
+            //Instanciar ZeroBlades
             canUseZeroBlades = false;
             randNum = 0;
         }
