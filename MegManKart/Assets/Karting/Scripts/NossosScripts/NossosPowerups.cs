@@ -27,7 +27,7 @@ public class NossosPowerups : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Lootbox") && !canUseBearTrap && !canUseCards && !canUseElectricWeb && !canUseForceField && !canUseZeroBlades)
+        if (other.CompareTag("LootBox") && !canUseBearTrap && !canUseCards && !canUseElectricWeb && !canUseForceField && !canUseZeroBlades)
         {
             randNum = Random.Range(1, 6);
         }
