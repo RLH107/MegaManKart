@@ -6,7 +6,7 @@ public class NossosPowerups : MonoBehaviour
 {
     private float randNum = 0;
 
-    public GameObject forceField;
+    public GameObject forceField, bearTrap;
 
     private bool canUseForceField, canUseBearTrap, canUseZeroBlades, canUseCards, canUseElectricWeb;
     private bool hasUsedForceField;
@@ -72,32 +72,30 @@ public class NossosPowerups : MonoBehaviour
                 hasUsedForceField = false;
             }
         }
-    }
 
-    private void OnMouseDown()
-    {
-        if (canUseElectricWeb)
+        if (canUseElectricWeb && Input.GetButtonDown("Fire1"))
         {
             Debug.Log("UsedElectricWeb");
             //Instanciar Orbe
             canUseElectricWeb = false;
             randNum = 0;
         }
-        if (canUseBearTrap)
+        if (canUseBearTrap && Input.GetButtonDown("Fire1"))
         {
             Debug.Log("UsedBearTrap");
-            //Instanciar BearTrap
+            Instantiate(bearTrap, transform.position, transform.rotation);
+            bearTrap.GetComponent<Rigidbody>().AddForce(transform.up * 10000000000000);
             canUseBearTrap = false;
             randNum = 0;
         }
-        if (canUseCards)
+        if (canUseCards && Input.GetButtonDown("Fire1"))
         {
             Debug.Log("UsedCards");
             //Instanciar Cards
             canUseCards = false;
             randNum = 0;
         }
-        if (canUseForceField)
+        if (canUseForceField && Input.GetButtonDown("Fire1"))
         {
             Debug.Log("UsedForceField");
             forceField.SetActive(true);
@@ -105,12 +103,12 @@ public class NossosPowerups : MonoBehaviour
             hasUsedForceField = true;
             randNum = 0;
         }
-        if (canUseZeroBlades)
+        if (canUseZeroBlades && Input.GetButtonDown("Fire1"))
         {
             Debug.Log("UsedZeroBlades");
             //Instanciar ZeroBlades
             canUseZeroBlades = false;
             randNum = 0;
         }
-    }
+    }   
 }

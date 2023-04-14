@@ -10,10 +10,16 @@ public class KartCreator : MonoBehaviour
     void Start()
     {
         //cria o carrinho na cena 
-        GameObject car = Instantiate(KartSelect.SelectedKart, transform.position, transform.rotation);
+        GameObject car1 = Instantiate(KartSelect.SelectedKart1, transform.position, transform.rotation);
         //aponta a camera pro carro
-        cameraC.Follow = car.transform;
-        cameraC.LookAt = car.transform;
+        cameraC.Follow = car1.transform;
+        cameraC.LookAt = car1.transform;
+
+        //cria o carrinho na cena 
+        GameObject car2 = Instantiate(KartSelect.SelectedKart2, transform.position, transform.rotation);
+        //aponta a camera pro carro
+        cameraC.Follow = car2.transform;
+        cameraC.LookAt = car2.transform;
 
     }
 }

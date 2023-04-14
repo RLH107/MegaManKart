@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceField: {fileID: 570439786}
+  bearTrap: {fileID: 0}
 --- !u!1 &120404129
 GameObject:
   m_ObjectHideFlags: 0
