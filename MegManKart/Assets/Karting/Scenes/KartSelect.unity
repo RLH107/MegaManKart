@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rot: {fileID: 965275697}
-  Kart: {fileID: 4810912518991602691, guid: 44578c63c69ecd24988a13aa2a83d050, type: 3}
+  kart: {fileID: 4810912518991602691, guid: 44578c63c69ecd24988a13aa2a83d050, type: 3}
 --- !u!65 &120404131
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rot: {fileID: 0}
-  Kart: {fileID: 0}
+  kart: {fileID: 0}
 --- !u!1 &160263376
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,7 +843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rot: {fileID: 115227820}
-  Kart: {fileID: 4810912518991602691, guid: 9dddb770d941c9041a23a581c3b2dc45, type: 3}
+  kart: {fileID: 4810912518991602691, guid: 9dddb770d941c9041a23a581c3b2dc45, type: 3}
 --- !u!65 &304115793
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -924,7 +924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rot: {fileID: 0}
-  Kart: {fileID: 0}
+  kart: {fileID: 0}
 --- !u!114 &499396861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1072,7 +1072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rot: {fileID: 0}
-  Kart: {fileID: 0}
+  kart: {fileID: 0}
 --- !u!114 &563681050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,7 +1380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rot: {fileID: 0}
-  Kart: {fileID: 0}
+  kart: {fileID: 0}
 --- !u!114 &806723440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2164,7 +2164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rot: {fileID: 0}
-  Kart: {fileID: 0}
+  kart: {fileID: 0}
 --- !u!114 &1270248527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2309,7 +2309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rot: {fileID: 1380406716}
-  Kart: {fileID: 4810912518991602691, guid: 19954de30401f73428254541a9ad156e, type: 3}
+  kart: {fileID: 4810912518991602691, guid: 19954de30401f73428254541a9ad156e, type: 3}
 --- !u!65 &1401631566
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2752,7 +2752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rot: {fileID: 765264260}
-  Kart: {fileID: 4810912518991602691, guid: 05a90af41d137a048a821b6e15a32b3c, type: 3}
+  kart: {fileID: 4810912518991602691, guid: 05a90af41d137a048a821b6e15a32b3c, type: 3}
 --- !u!65 &1740080262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2907,7 +2907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rot: {fileID: 0}
-  Kart: {fileID: 0}
+  kart: {fileID: 0}
 --- !u!114 &1807486109
 MonoBehaviour:
   m_ObjectHideFlags: 0
