@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LootBox
   - CrashMode
+  - STUNN
   layers:
   - Default
   - TransparentFX
