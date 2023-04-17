@@ -8,6 +8,8 @@ public class NossosPowerups : MonoBehaviour
 
     public GameObject forceField, bearTrap;
 
+    public Transform trapSpawnPoint;
+
     private bool canUseForceField, canUseBearTrap, canUseZeroBlades, canUseCards, canUseElectricWeb;
     private bool hasUsedForceField;
 
@@ -83,7 +85,7 @@ public class NossosPowerups : MonoBehaviour
         if (canUseBearTrap && Input.GetButtonDown("Fire1"))
         {
             Debug.Log("UsedBearTrap");
-            Instantiate(bearTrap, transform.position, transform.rotation);
+            Instantiate(bearTrap, trapSpawnPoint.position, transform.rotation);
             bearTrap.GetComponent<Rigidbody>().AddForce(transform.up * 10000000000000);
             canUseBearTrap = false;
             randNum = 0;

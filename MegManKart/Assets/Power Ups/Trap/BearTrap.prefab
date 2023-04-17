@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1153558128660487828}
   - component: {fileID: 7062059047388974863}
   - component: {fileID: 4786218948616789042}
+  - component: {fileID: 516226229372208292}
   m_Layer: 0
   m_Name: BearTrap
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7768761152728276725}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4160719536412515879}
   m_Father: {fileID: 0}
@@ -62,6 +63,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &516226229372208292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7768761152728276725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc20f5f089025e44c8732568e54897bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4483158756071848396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92,7 +105,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c14da8ba9a27b4346851e7d0b9aa9dbf,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c14da8ba9a27b4346851e7d0b9aa9dbf,
         type: 3}
@@ -102,7 +115,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c14da8ba9a27b4346851e7d0b9aa9dbf,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c14da8ba9a27b4346851e7d0b9aa9dbf,
         type: 3}
@@ -117,7 +130,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c14da8ba9a27b4346851e7d0b9aa9dbf,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c14da8ba9a27b4346851e7d0b9aa9dbf,
         type: 3}
