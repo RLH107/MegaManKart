@@ -52,7 +52,7 @@ public class TimeManager : MonoBehaviour
         
         if (IsFinite && !IsOver)
         {
-            TimeRemaining -= Time.deltaTime;
+//            TimeRemaining -= Time.deltaTime;
             if (TimeRemaining <= 0)
             {
                 TimeRemaining = 0;
