@@ -53,8 +53,16 @@ namespace KartGame.KartSystems
 
         void FixedUpdate() 
         {
-            m_SmoothedSteeringInput = Mathf.MoveTowards(m_SmoothedSteeringInput, kartController.Input.TurnInput, 
-                steeringAnimationDamping * Time.deltaTime);
+            if (gameObject.GetComponent<ArcadeKart>().isPlayerOne)
+            {
+                m_SmoothedSteeringInput = Mathf.MoveTowards(m_SmoothedSteeringInput, kartController.Input.TurnInputP1,
+                    steeringAnimationDamping * Time.deltaTime);
+            }
+            if (!gameObject.GetComponent<ArcadeKart>().isPlayerOne)
+            {
+                m_SmoothedSteeringInput = Mathf.MoveTowards(m_SmoothedSteeringInput, kartController.Input.TurnInputP2,
+                    steeringAnimationDamping * Time.deltaTime);
+            }
 
             // Steer front wheels
             float rotationAngle = m_SmoothedSteeringInput * maxSteeringAngle;

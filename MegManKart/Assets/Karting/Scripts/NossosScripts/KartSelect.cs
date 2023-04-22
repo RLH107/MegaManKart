@@ -1,3 +1,4 @@
+using KartGame.KartSystems;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -49,12 +50,16 @@ public class KartSelect : MonoBehaviour
             */
 
             player2Kart = kart;
+
+            kart.GetComponent<ArcadeKart>().isPlayerOne = false;
         }
         else
         {
             firstKartChosen = true;
 
-            player1Kart = kart; 
+            player1Kart = kart;
+
+            kart.GetComponent<ArcadeKart>().isPlayerOne = true;
         }
     }
 }

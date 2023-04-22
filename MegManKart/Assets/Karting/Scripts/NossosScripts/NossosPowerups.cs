@@ -31,7 +31,8 @@ public class NossosPowerups : MonoBehaviour
     {
         if (other.CompareTag("LootBox") && !canUseBearTrap && !canUseCards && !canUseElectricWeb && !canUseForceField && !canUseZeroBlades)
         {
-            randNum = Random.Range(1, 6);
+            //randNum = Random.Range(1, 6);
+            randNum = 2;
         }
     }
 
@@ -86,7 +87,6 @@ public class NossosPowerups : MonoBehaviour
         {
             Debug.Log("UsedBearTrap");
             Instantiate(bearTrap, trapSpawnPoint.position, transform.rotation);
-            bearTrap.GetComponent<Rigidbody>().AddForce(transform.up * 10000000000000);
             canUseBearTrap = false;
             randNum = 0;
         }

@@ -161,6 +161,8 @@ namespace KartGame.KartSystems
         const float k_NullSpeed = 0.01f;
         Vector3 m_VerticalReference = Vector3.up;
 
+        public bool isPlayerOne;
+
         // Drift params
         public bool WantsToDrift { get; private set; } = false;
         public bool IsDrifting { get; private set; } = false;
@@ -310,9 +312,13 @@ namespace KartGame.KartSystems
             AirPercent = 1 - GroundPercent;
 
             // apply vehicle physics
-            if (m_CanMove)
+            if (m_CanMove && isPlayerOne)
             {
-                MoveVehicle(Input.Accelerate, Input.Brake, Input.TurnInput);
+                MoveVehicle(Input.Accelerate, Input.Brake, Input.TurnInputP1);
+            }
+            if (m_CanMove && !isPlayerOne)
+            {
+                MoveVehicle(Input.WASDAccelerate, Input.WASDBrake, Input.TurnInputP2);
             }
             GroundAirbourne();
 
