@@ -7,3 +7,17 @@ Theo Simões de Souza Yamada _=_ Nyct1bius
 Rafael Meirelles Alves Ferreira _=_ CHIPMUSK
 
 Lucas Hellner Feitosa _=_ RLH107
+
+Rafael Azevedo Rossi _=_ Lupido
+
+
+
+Artur Amorim - Modelador/Design (Princeso Kart, power-ups, texturas gerais, pista)
+Lucas H. Feitosa - Design (Coronel Kart) e Programação (Telas do select Kart sistema codigo de Stun do Kart) 
+Theo Yamada -  Design (Tank Kart) e Programação (Multijogador Local e Caixa de Itens)
+
+
+
+
+Link do GitHub  [ https://github.com/RLH107/MegaManKart ]
+Link do Itch.IO [ https://rlh107.itch.io/mega-man-kart ]
